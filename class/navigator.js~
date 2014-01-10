@@ -1,0 +1,23 @@
+$(function(){
+
+      $("#menuSearch").click(function(){
+           $(".search").slideDown(); 
+           $("#searchOverlay").show();  
+     });
+    
+
+     $("#search").click(function(){
+     
+          searchPhrase($("#inputSearch").val());
+     });
+
+     $("#searchOverlay").click(function(){
+          $(".search").slideUp(); 
+           $("#searchOverlay").hide();
+     });
+     
+     
+
+});
+
+
